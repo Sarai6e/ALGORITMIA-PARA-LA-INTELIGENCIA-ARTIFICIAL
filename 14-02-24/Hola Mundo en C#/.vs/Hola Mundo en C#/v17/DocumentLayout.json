@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alumno\\Documents\\ALGORITMIA PARA LA INTELIGENCIA ARTIFICIAL\\14-02-24\\Hola Mundo en C#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A03EA00A-3A43-4637-82C9-EF77FAAC8258}|Hola Mundo en C#\\Hola Mundo en C#.csproj|c:\\users\\alumno\\documents\\algoritmia para la inteligencia artificial\\14-02-24\\hola mundo en c#\\hola mundo en c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03EA00A-3A43-4637-82C9-EF77FAAC8258}|Hola Mundo en C#\\Hola Mundo en C#.csproj|solutionrelative:hola mundo en c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alumno\\Documents\\ALGORITMIA PARA LA INTELIGENCIA ARTIFICIAL\\14-02-24\\Hola Mundo en C#\\Hola Mundo en C#\\Program.cs",
+              "RelativeDocumentMoniker": "Hola Mundo en C#\\Program.cs",
+              "ToolTip": "C:\\Users\\alumno\\Documents\\ALGORITMIA PARA LA INTELIGENCIA ARTIFICIAL\\14-02-24\\Hola Mundo en C#\\Hola Mundo en C#\\Program.cs",
+              "RelativeToolTip": "Hola Mundo en C#\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T12:31:58.958Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
