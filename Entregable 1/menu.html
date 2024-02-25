@@ -15,22 +15,32 @@
     />
     <link rel="stylesheet" href="menu.css"> <!--definir hoja estilo (css)-->
     <title> DESARROLLO WEB  FERETERRIA </title>
+    
 
 </head>
 
 <body>
 <!--SECCION INICIO -->
+
+
     <section id="inicio">
         <div class="contenido">
             <header>
-                <div class="contenido-header">
-                    <!-- Agregar el logo -->
-                    <img src="l.png" alt="Logo" class="logo">
-                    <!-- Barra de búsqueda -->
+                
+                <!-- Barra adicional para el logo y el buscador -->
+                <div class="barra-adicional">
+                    <img src="logo.png" alt="Logo" class="logo">
                     <div class="busqueda">
                         <input type="text" placeholder="Buscar...">
                         <button type="button"><i class="fas fa-search"></i></button>
                     </div>
+                    <div class="acciones">
+                        <a href="#" class="icono"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="index.html" class="icono"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+
+                <div class="contenido-header">
                     <nav id="nav" class="">
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
@@ -103,5 +113,7 @@
 
     <script src="scri.js"></script> <!--definir javaScript-->
 </body>
+
+
 
 </html>

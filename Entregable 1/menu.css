@@ -291,31 +291,67 @@ footer a{
         margin-bottom: 15px;
     }
 }
+
 .logo {
     width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
 }
 
-.busqueda {
+.barra-adicional {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Para distribuir los elementos horizontalmente */
+    background-color: #f7ae12; /* Color de fondo de la barra adicional */
+    padding: 10px 30px; /* Ajusta el padding según tus necesidades */
+}
+
+.barra-adicional .logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+    margin-right: -330px; /* Ajusta el margen derecho del logo */
+    margin-bottom: -3px; /* Baja un poco el logo */
+}
+
+.barra-adicional .busqueda input[type="text"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    margin-right: 5px;
+    width: 600px; /* Ajusta el ancho del campo de búsqueda según tus necesidades */
+    text-align: center; /* Centra el texto en el campo de búsqueda */
+}
+
+.barra-adicional .busqueda button {
+    padding: 10px 15px;
+    background-color: #fff; /* Color de fondo del botón */
+    border: none;
+    border-radius: 5px;
+    color: #f7ae12; /* Color del icono del botón */
+    cursor: pointer;
+    font-size: 20px; /* Tamaño de la fuente del botón */
+}
+
+.barra-adicional .busqueda button:hover {
+    background-color: #f7ae12; /* Cambio de color de fondo del botón al pasar el ratón */
+    color: #fff; /* Cambio de color del icono del botón al pasar el ratón */
+}
+
+.barra-adicional .acciones {
     display: flex;
     align-items: center;
 }
 
-.busqueda input[type="text"] {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 5px;
+.barra-adicional .icono {
+    margin-left: 15px; /* Ajusta el margen entre iconos según tus necesidades */
+    color: #fff; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
-.busqueda button {
-    padding: 8px 10px;
-    background-color: #f7ae12;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
+.barra-adicional .icono:hover {
+    color: #ccc; /* Cambia el color del icono al pasar el ratón */
 }
 
-.busqueda button:hover {
-    background-color: #f7ae12;
-}
+
+
+
+
+
