@@ -1,0 +1,107 @@
+<!--Desarrolle de Proyecto Final -->
+<!--DOCTYPE es una etiqueta que nos permite definir los elementos del archivo HTML-->
+<!DOCTYPE html>
+<html lang="es"> <!-- El html es el atributo y lang el idioma-->
+<!-- Inicio de la  estructura-->
+<head>
+    <meta charset="UTF-8"> <!--especifica la codificación de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+<!--"Initial-scale" establece el nivel de zoom de la página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="menu.css"> <!--definir hoja estilo (css)-->
+    <title> DESARROLLO WEB  FERETERRIA </title>
+
+</head>
+
+<body>
+<!--SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <!-- Agregar el logo -->
+                    <img src="l.png" alt="Logo" class="logo">
+                    <!-- Barra de búsqueda -->
+                    <div class="busqueda">
+                        <input type="text" placeholder="Buscar...">
+                        <button type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">REGISTRO</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+<!--ICONOS DEL MENU RESPONSIVE -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+
+                    </div>
+<!-- ICONOS DE LAS REDES SOCIALES -->
+<div class="redes">
+    <a href="https://www.youtube.com/@SarairutRomerovillanueva"><i class="fa-brands fa-square-youtube"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100090036183160"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/sarairutromero/"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="https://github.com/Sarai6e/DESARROLLO-DE-APLICACIONES-WEB-I.git"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.tiktok.com/@user5236794254212?_t=8bjquaOYIaM&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+    </footer>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos </p>
+                <h2>A  <span>  </span>  TORNILLO FELIZ </h2>
+                <p class="descripcion"> </p>
+                <a href="#portafolio">conosenos </a>
+            </div>
+        </div>
+    </section>
+
+
+<!--SECCION CONTACTO  -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje...." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+            
+        </div>
+    </section>
+
+<!-- SECCION FOOTER -->
+    <footer>
+        <p>todos los derechos reservados - 2024</p>
+<!-- ICONOS DE LAS REDES SOCIALES -->
+<div class="redes">
+    <a href="https://www.youtube.com/@SarairutRomerovillanueva"><i class="fa-brands fa-square-youtube"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100090036183160"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/sarairutromero/"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="https://github.com/Sarai6e/DESARROLLO-DE-APLICACIONES-WEB-I.git"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.tiktok.com/@user5236794254212?_t=8bjquaOYIaM&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+    </footer>
+
+    <script src="scri.js"></script> <!--definir javaScript-->
+</body>
+
+</html>
