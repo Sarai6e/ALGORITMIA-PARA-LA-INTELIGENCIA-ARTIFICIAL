@@ -28,7 +28,7 @@
       </section>
       <input type="submit" class="form__submit" value="Enter">
       <section>
-        <a href="registro.html">Create account</a>
+        <a href="registro.php">Create account</a>
       </section>
     </div>
   </form>    
