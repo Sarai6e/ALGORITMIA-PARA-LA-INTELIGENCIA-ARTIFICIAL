@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Producto</title>
+</head>
+<body>
+    <h1>Bienvenido a la Ferretería</h1>
+    <h2>Seleccione un Producto:</h2>
+    <form action="/compra" method="post">
+        <select name="id_producto">
+            {% for producto in productos %}
+                <option value="{{ producto.id }}">{{ producto.nombre }} - ${{ producto.precio }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>
+
