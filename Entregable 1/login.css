@@ -13,14 +13,31 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('imagen\ 01.jpg');
+    background-image: url('imagen3.jpg'); /* Initial background image */
     background-size: cover;
     background-position: center center;
     height: 400px;
     font-family: 'Roboto', sans-serif;
     background-position: 0 0, 10px 10px;
-       
+    /* Apply animation */
+    animation: changeBackground 9s linear infinite; /* 3 images, each lasting for 3 seconds */
 }
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('imagen1.jpg');
+    }
+    33.33% {
+        background-image: url('imagen2.jpg');
+    }
+    66.66% {
+        background-image: url('imagen3.jpg');
+    }
+    100% {
+        background-image: url('imagen1.jpg');
+    }
+}
+
 
 .navigation a:hover::after{
     transition: left;
@@ -183,3 +200,4 @@ section a {
     }
 
 }
+
