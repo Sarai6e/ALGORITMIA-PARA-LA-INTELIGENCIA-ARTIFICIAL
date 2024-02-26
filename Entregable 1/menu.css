@@ -11,13 +11,23 @@
 html{
     scroll-behavior: smooth;
 }
-#inicio{
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,.7)),url("Fondo.gif");
-    background-size: cover;
-    background-position: center center;
+/* Elimina la regla de fondo de GIF */
+/* Elimina la regla de fondo de GIF */
+#inicio {
     height: 100vh;
-
+    animation: changeBackground 12s infinite; /* Cambia la imagen cada 12 segundos (4 segundos por imagen) */
+    background-size: cover;
+    background-position: center;
 }
+
+@keyframes changeBackground {
+    0% { background-image: url('imagen1.jpg'); } /* Primera imagen */
+    33% { background-image: url('imagen2.jpg'); } /* Segunda imagen */
+    66% { background-image: url('imagen3.jpg'); } /* Tercera imagen */
+    100% { background-image: url('imagen1.jpg'); } /* Vuelve a la primera imagen */
+}
+
+
 #inicio .contenido header{
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
@@ -348,6 +358,72 @@ footer a{
 
 .barra-adicional .icono:hover {
     color: #ccc; /* Cambia el color del icono al pasar el ratón */
+}
+
+
+/* Estilos para el enlace de WhatsApp */
+.whatsapp-icon {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del icono */
+    width: 70px; /* Ancho del enlace */
+    height: 70px; /* Altura del enlace */
+    border-radius: 50%; /* Bord es redondeado para formar un círculo */
+    position: fixed; /* Posición fija */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    left: 20px; /* Distancia desde la parte izquierda */
+    display: flex; /* Hacer el contenido flex para centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    font-size: 30px; /* Tamaño del icono */
+    z-index: 1000; /* Asegurar que esté encima de otros elementos */
+    animation: pulse 2s infinite alternate; /* Animación de pulso */
+}
+
+/* Cambiar el color del icono al pasar el ratón por encima */
+.whatsapp-icon:hover {
+    background-color: #45a049; /* Cambiar el color de fondo al pasar el ratón por encima */
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Escala inicial */
+    }
+    100% {
+        transform: scale(1.2); /* Escala al 120% */
+    }
+}
+
+/* Estilos para los círculos */
+.circles {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Los círculos no deben ser clicables */
+}
+
+.circle {
+    position: absolute;
+    background-color: rgba(76, 175, 80, 0.3); /* Color del círculo (verde con opacidad) */
+    width: 20px; /* Ancho del círculo */
+    height: 20px; /* Altura del círculo */
+    border-radius: 50%; /* Borde redondeado para formar un círculo */
+    animation: circle-animation 3s infinite; /* Animación de movimiento */
+}
+
+/* Animación de movimiento de los círculos */
+@keyframes circle-animation {
+    0% {
+        transform: translateY(0) scale(0); /* Posición y escala inicial */
+        opacity: 1; /* Opacidad inicial */
+    }
+    100% {
+        transform: translateY(-500px) scale(1); /* Posición y escala final */
+        opacity: 0; /* Opacidad final */
+    }
 }
 
 
