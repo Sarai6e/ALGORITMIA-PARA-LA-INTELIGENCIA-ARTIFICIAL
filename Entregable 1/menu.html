@@ -35,8 +35,8 @@
                 <div class="barra-adicional">
                     <img src="logo.png" alt="Logo" class="logo">
                     <div class="busqueda">
-                        <input type="text" placeholder="Buscar...">
-                        <button type="button"><i class="fas fa-search"></i></button>
+                        <input type="text" id="inputBusqueda" placeholder="Buscar...">
+                        <button type="button" onclick="buscarHerramienta()"><i class="fas fa-search"></i></button>
                     </div>
                     <div class="acciones">
                         <a href="#" class="icono"><i class="fas fa-shopping-cart"></i></a>
@@ -52,7 +52,7 @@
                             <li><a href="#portafolio" onclick="seleccionar(this)">SERVICIOS</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                             <li><a href="pagos.php" onclick="seleccionar(this)">PAGOS</a></li>
-                            <li><a href="producto.php" onclick="seleccionar(this)">PRODUCTOS</a></li>
+                            <li><a href="productos.php" onclick="seleccionar(this)">COMPRAR</a></li>
                         </ul>
                     </nav>
 <!--ICONOS DEL MENU RESPONSIVE -->
@@ -219,6 +219,25 @@
         </div>
     </div>
     
+</section>
+
+<script>
+    function buscarHerramienta() {
+        // Obtener el valor del input de búsqueda
+        var textoBusqueda = document.getElementById('inputBusqueda').value;
+        
+        // Aquí puedes realizar la lógica de búsqueda, por ejemplo, buscar en una lista de herramientas
+        // Supongamos que tienes una lista de herramientas en un array llamado 'herramientas'
+        var herramientas = ["martillo", "destornillador", "sierra", "taladro"];
+        
+        // Verificar si la herramienta buscada está en la lista
+        if (herramientas.includes(textoBusqueda.toLowerCase())) {
+            alert('Sí, la herramienta "' + textoBusqueda + '" está disponible.');
+        } else {
+            alert('Lo siento, la herramienta "' + textoBusqueda + '" no está disponible.');
+        }
+    }
+</script>
 
 </body>
 
