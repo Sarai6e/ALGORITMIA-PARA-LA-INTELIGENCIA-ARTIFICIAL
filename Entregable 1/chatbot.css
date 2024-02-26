@@ -1,0 +1,43 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.robot {
+    width: 100px;
+    height: 100px;
+    background-color: #f7ae12;
+    background-image: url('r.gif'); /* Coloca aquí la ruta de la imagen del robot */
+    background-size: cover;
+    cursor: pointer;
+}
+
+.chatbox {
+    display: none;
+    width: 300px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.messages div {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#user-input {
+    width: 70%;
+}
+
+button {
+    width: 25%;
+    cursor: pointer;
+}

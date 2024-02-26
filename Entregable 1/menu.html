@@ -13,7 +13,10 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" 
     />
+    <script src="scri.js"></script> <!--definir javaScript-->
+    <script src="bot.js"></script> <!--definir javaScript-->
     <link rel="stylesheet" href="menu.css"> <!--definir hoja estilo (css)-->
+    <link rel="stylesheet" href="chatbot.css"> <!--definir hoja estilo (css)-->
     <title> DESARROLLO WEB  FERETERRIA </title>
     
 
@@ -119,9 +122,16 @@
         <!-- Efecto de movimiento -->
         <div class="circles"></div>
     </footer>
-    
 
-    <script src="scri.js"></script> <!--definir javaScript-->
+    <div class="chatbot-container">
+        <div class="robot" id="robot" onclick="toggleChatbox()"></div>
+        <div class="chatbox" id="chatbox">
+            <div class="messages" id="messages"></div>
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    
 
 </body>
 

@@ -320,25 +320,31 @@ footer a{
     margin-bottom: -3px; /* Baja un poco el logo */
 }
 
+.barra-adicional .busqueda {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    height: 100%; /* Establece un alto fijo */
+}
+
 .barra-adicional .busqueda input[type="text"] {
     padding: 10px;
     border-radius: 6px;
     border: 2px solid #000000;
     margin-right: 5px;
     width: 600px; /* Ajusta el ancho del campo de búsqueda según tus necesidades */
-    text-align: center; /* Centra el texto en el campo de búsqueda */
+    text-align: center;
 }
+
 
 .barra-adicional .busqueda button {
-    padding: 10px 15px;
-    background-color: #fff; /* Color de fondo del botón */
+    padding: 10px; /* Ajusta el padding */
+    background-color: #fff;
     border: none;
     border-radius: 5px;
-    color: #f7ae12; /* Color del icono del botón */
+    color: #f7ae12;
     cursor: pointer;
-    font-size: 20px; /* Tamaño de la fuente del botón */
+    font-size: 20px;
 }
-
 .barra-adicional .busqueda button:hover {
     background-color: #f7ae12; /* Cambio de color de fondo del botón al pasar el ratón */
     color: #fff; /* Cambio de color del icono del botón al pasar el ratón */
