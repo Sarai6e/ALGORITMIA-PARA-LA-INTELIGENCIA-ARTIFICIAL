@@ -42,24 +42,24 @@
     }
 
     .container{
-      width: 100%;
-      max-width: 650px;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 28px;
-      margin: 0 28px;
-      border-radius: 10px;
-      box-shadow: inset -2px 2px 2px white;
-    }
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
 
-    .form-title{
-      font-size: 26px;
-      font-weight: 600;
-      text-align: center;
-      padding-bottom: 6px;
-      color: white;
-      text-shadow: 2px 2px 2px black;
-      border-bottom: solid 1px white;
-    }
 
     .main-user-info {
       display: flex;
@@ -120,7 +120,7 @@
 <body>
   <div class="container">
     <h1 class="form-title">RECOVER PASSWORD</h1>
-    <form id="recovery-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form id="recovery-form">
       <div class="main-user-info">
         <div class="user-input-box">
           <label for="email">Email</label>
@@ -133,49 +133,54 @@
     </form>
     <section>
       <div>
-        <a href="#">Back to Login</a>
+        <a href="login.php">Back to Login</a>
       </div>
     </section>
   </div>
 
-  <?php
-  // Verificar si se recibió una solicitud POST
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      // Establecer la conexión con la base de datos
-      $servername = "localhost"; // Cambia localhost por el nombre de tu servidor si es diferente
-      $username = "root";
-      $password = "";
-      $database = "el_tornillo_feliz";
-  
+  <script>
+    document.getElementById('recovery-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
 
-      // Crear una conexión
-      $conn = new mysqli($servername, $username, $password, $dbname);
-
-      // Verificar la conexión
-      if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-      }
-
-      // Obtener el correo electrónico ingresado por el usuario
-      $email = $_POST['email'];
-
-      // Generar una contraseña aleatoria (puedes cambiar esto si prefieres otra forma de generar contraseñas)
-      $password = uniqid();
-
-      // Preparar la consulta SQL para insertar los datos en la tabla
-      $sql = "INSERT INTO passwords (email, password) VALUES ('$email', '$password')";
-
-      // Ejecutar la consulta y verificar si fue exitosa
-      if ($conn->query($sql) === TRUE) {
-          echo "New record created successfully";
-      } else {
-          echo "Error: " . $sql . "<br>" . $conn->error;
-      }
-
-      // Cerrar la conexión
-      $conn->close();
-  }
-  ?>
+      // Simulate email sending
+      var email = document.getElementById('email').value;
+      alert('A password recovery email has been sent to ' + email);
+    });
+  </script>
 </body>
-</html>
+<?php
+// Configuración de la conexión a la base de datos
+$servername = "localhost"; // Cambia localhost por el nombre de tu servidor si es diferente
+$username = "root";
+$password = "";
+$database = "el_tornillo_feliz";
 
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Procesar el formulario si se ha enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Obtener el valor del campo de correo electrónico del formulario
+  $email = $_POST["email"];
+
+  // Preparar la consulta SQL para insertar el correo electrónico en la base de datos
+  $sql = "INSERT INTO usuarios (email) VALUES ('$email')";
+
+  // Ejecutar la consulta
+  if ($conn->query($sql) === TRUE) {
+    echo "Record inserted successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+}
+
+// Cerrar la conexión
+$conn->close();
+?>
+
+</html>

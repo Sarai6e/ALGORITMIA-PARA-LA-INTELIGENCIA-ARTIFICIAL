@@ -24,7 +24,7 @@
         <span class="form__line"></span>
       </div>
       <section>
-        <a href="contraseña.html">Forgot password?</a>
+        <a href="contraseña.php">Forgot password?</a>
       </section>
       <input type="submit" class="form__submit" value="Enter">
       <section>
