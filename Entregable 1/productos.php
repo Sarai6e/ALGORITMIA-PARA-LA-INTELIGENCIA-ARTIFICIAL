@@ -1,46 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra en Ferretería</title>
+    <title>Productos de Ferretería</title>
+    <style>
+        /* Estilos para los cuadros de productos */
+        .producto {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+            text-align: center;
+        }
+
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
+    <h1>Productos de Ferretería</h1>
 
-    <h1>Compra en Ferretería</h1>
+    <div class="producto">
+        <img src="1.jpg" alt="Producto 1">
+        <h2>Cemento</h2>
+        <p>Precio: s/.45.00</p>
+        <button>Agregar al carrito</button>
+    </div>
 
-    <form action="procesar_compra.php" method="POST">
-        <!-- Buscar Producto -->
-        <div>
-            <label for="buscar_producto">Buscar producto:</label>
-            <input type="text" id="buscar_producto" name="buscar_producto" placeholder="Ingrese el producto que desea buscar">
-        </div>
+    <div class="producto">
+        <img src="2.jpg" alt="Producto 2">
+        <h2>Tubo Redondo</h2>
+        <p>Precio: s/.12.00</p>
+        <button>Agregar al carrito</button>
+    </div>
 
-        <!-- Seleccionar Producto -->
-        <div>
-            <label for="seleccionar_producto">Seleccionar producto:</label>
-            <select id="seleccionar_producto" name="seleccionar_producto">
-                <option value="martillo">Martillo</option>
-                <option value="destornillador">Destornillador</option>
-                <option value="sierra">Sierra</option>
-                <option value="taladro">Taladro</option>
-            </select>
-        </div>
+    <div class="producto">
+        <img src="3.jpg" alt="Producto 2">
+        <h2>Ladrillo de pared</h2>
+        <p>Precio: s/.3.00</p>
+        <button>Agregar al carrito</button>
+    </div>
 
-        <!-- Compra Producto -->
-        <div>
-            <label for="confirmar_compra">Confirmar compra:</label>
-            <input type="checkbox" id="confirmar_compra" name="confirmar_compra">
-        </div>
+    <div class="producto">
+        <img src="4.jpg" alt="Producto 2">
+        <h2>Barra de aceros</h2>
+        <p>Precio: s/. 42.00</p>
+        <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="5.jpg" alt="Producto 2">
+        <h2>Calamina métalica</h2>
+        <p>Precio: s/.30.00</p>
+        <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="6.jpg" alt="Producto 2">
+        <h2>Martillo</h2>
+        <p>Precio: s/28.00</p>
+        <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="7.jpg" alt="Producto 2">
+        <h2>Taladro</h2>
+        <p>Precio:s/.1056.20</p>
+        <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="8.jpg" alt="Producto 2">
+        <h2>Brocha</h2>
+        <p>Precio: s/.22.00</p>
+        <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="9.jpg" alt="Producto 2">
+        <h2>Cinta métrica</h2>
+        <p>Precio: s/.25.00</p>
+        <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="10.jpg" alt="Producto 2">
+        <h2>Llave ajustable</h2>
+        <p>Precio: s/.15.00</p>
+        <button>Agregar al carrito</button>
+    </div>
 
-        <!-- Ingresar Datos de Pago -->
-        <div>
-            <label for="datos_pago">Ingresar datos de pago:</label><br>
-            <textarea id="datos_pago" name="datos_pago" rows="4" cols="50" placeholder="Ingrese los datos de pago"></textarea>
-        </div>
-
-        <button type="submit">Enviar</button>
-    </form>
+    <!-- Añade más productos según sea necesario -->
 
 </body>
 </html>
