@@ -1,0 +1,15 @@
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\OrdenarPorSeleccion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\OrdenarPorSeleccion.AssemblyInfoInputs.cache
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\OrdenarPorSeleccion.AssemblyInfo.cs
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\OrdenarPorSeleccion.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\OrdenarPorSeleccion.sourcelink.json
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\bin\Debug\net8.0\OrdenarPorSeleccion.exe
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\bin\Debug\net8.0\OrdenarPorSeleccion.deps.json
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\bin\Debug\net8.0\OrdenarPorSeleccion.runtimeconfig.json
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\bin\Debug\net8.0\OrdenarPorSeleccion.dll
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\bin\Debug\net8.0\OrdenarPorSeleccion.pdb
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\OrdenarPorSeleccion.dll
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\refint\OrdenarPorSeleccion.dll
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\OrdenarPorSeleccion.pdb
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\OrdenarPorSeleccion.genruntimeconfig.cache
+C:\Users\alumno\Documents\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\OrdenarPorSeleccion\OrdenarPorSeleccion\obj\Debug\net8.0\ref\OrdenarPorSeleccion.dll
