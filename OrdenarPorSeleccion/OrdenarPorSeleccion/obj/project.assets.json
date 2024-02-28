@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alumno\\Documents\\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\\OrdenarPorSeleccion\\OrdenarPorSeleccion\\OrdenarPorSeleccion.csproj",
+      "projectUniqueName": "C:\\Users\\alumno\\Downloads\\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\\OrdenarPorSeleccion\\OrdenarPorSeleccion\\OrdenarPorSeleccion.csproj",
       "projectName": "OrdenarPorSeleccion",
-      "projectPath": "C:\\Users\\alumno\\Documents\\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\\OrdenarPorSeleccion\\OrdenarPorSeleccion\\OrdenarPorSeleccion.csproj",
+      "projectPath": "C:\\Users\\alumno\\Downloads\\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\\OrdenarPorSeleccion\\OrdenarPorSeleccion\\OrdenarPorSeleccion.csproj",
       "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alumno\\Documents\\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\\OrdenarPorSeleccion\\OrdenarPorSeleccion\\obj\\",
+      "outputPath": "C:\\Users\\alumno\\Downloads\\ALGORITMIA_PARA_LA_INTELIGENCIA_ARTIFICIAL\\OrdenarPorSeleccion\\OrdenarPorSeleccion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

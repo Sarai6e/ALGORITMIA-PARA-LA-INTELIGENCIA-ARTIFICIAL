@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AlgoSelect", "AlgoSelect\AlgoSelect.pyproj", "{3F7B9028-B88D-4433-9F4D-E017FB146487}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F7B9028-B88D-4433-9F4D-E017FB146487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7B9028-B88D-4433-9F4D-E017FB146487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ECCE262-62AB-462A-9229-8EBC6F8FEDE6}
+	EndGlobalSection
+EndGlobal
