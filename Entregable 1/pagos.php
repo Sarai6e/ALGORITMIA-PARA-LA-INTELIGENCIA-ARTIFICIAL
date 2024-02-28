@@ -16,31 +16,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Verificar si se seleccionó una forma de pago
-    if (isset($_POST['forma-pago'])) {
-        $forma_pago = $_POST['forma-pago'];
+    if (isset($_POST['paymentMethod'])) {
+        $paymentMethod = $_POST['paymentMethod'];
 
-        // Insertar los datos en la base de datos dependiendo de la forma de pago
-        if ($forma_pago === 'tarjeta') {
-            $num_tarjeta = $_POST['num-tarjeta'];
-            $num_dni = $_POST['num-dni'];
-            $cantidad_pagar = $_POST['cantidad-pagar'];
+        // Insertar los datos en la base de datos dependiendo del método de pago
+        if ($paymentMethod === 'deposito') {
+            // Aquí iría el código para el método de depósito, si necesitas guardarlo en la base de datos
+        } elseif ($paymentMethod === 'tarjeta') {
+            $email = $_POST['email'];
 
-            // Preparar la consulta SQL para insertar los datos en la tabla de pagos
-            $sql = "INSERT INTO pagos (forma_pago, num_tarjeta, num_dni, cantidad_pagar) VALUES ('$forma_pago', '$num_tarjeta', '$num_dni', '$cantidad_pagar')";
+            // Aquí iría el código para el método de pago con tarjeta
+            // Por ejemplo, podrías enviar un correo electrónico con los datos de pago
+            mail($email, "Detalle del Pago", "Aquí va el detalle del pago con tarjeta");
 
-            if ($conn->query($sql) === TRUE) {
-                echo "Pago procesado exitosamente.";
-            } else {
-                echo "Error al procesar el pago: " . $conn->error;
-            }
-        } elseif ($forma_pago === 'efectivo') {
-            // Si la forma de pago es en efectivo, puedes realizar aquí la inserción en la base de datos
-            echo "Pago en efectivo procesado exitosamente.";
-        } else {
-            echo "Por favor selecciona una forma de pago válida.";
+            echo "Se ha enviado la información de pago a $email";
         }
     } else {
-        echo "Por favor selecciona una forma de pago.";
+        echo "Por favor selecciona un método de pago.";
     }
 
     // Cerrar la conexión a la base de datos
@@ -52,49 +44,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleccionar Forma de Pago</title>
-    <link rel="stylesheet" href="pago.css">
+    <title>Seleccionar Método de Pago</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="forma-pago">
-    <h1>Seleccionar Forma de Pago</h1>
+<div class="payment-form">
+    <h1>Seleccionar Método de Pago</h1>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <input type="radio" id="tarjeta" name="forma-pago" value="tarjeta" onclick="mostrarCampo('tarjeta')">
-        <label for="tarjeta">Tarjeta de crédito</label><br>
+        <input type="radio" id="deposito" name="paymentMethod" value="deposito">
+        <label for="deposito">Depósito Bancario</label><br>
 
-        <div id="campo-tarjeta" style="display:none;">
-            <label for="num-tarjeta">Número de Tarjeta:</label><br>
-            <input type="text" id="num-tarjeta" name="num-tarjeta"><br>
+        <input type="radio" id="tarjeta" name="paymentMethod" value="tarjeta">
+        <label for="tarjeta">Pago con Tarjeta</label><br><br>
 
-            <label for="num-dni">Número de DNI:</label><br>
-            <input type="text" id="num-dni" name="num-dni"><br>
-
-            <label for="cantidad-pagar">Cantidad a Pagar:</label><br>
-            <input type="text" id="cantidad-pagar" name="cantidad-pagar"><br><br>
+        <div id="emailForm" style="display: none;">
+            <label for="email">Ingrese su correo electrónico:</label><br>
+            <input type="email" id="email" name="email"><br><br>
         </div>
 
-        <input type="radio" id="efectivo" name="forma-pago" value="efectivo">
-        <label for="efectivo">Efectivo</label><br><br>
-
-        <button type="submit">Procesar Pago</button>
-        <button type="button" onclick="cancelarPago()">Cancelar</button>
-        <section>
-        <a href="menu.html">INICIO</a>
-      </section>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="cancelPayment()">Cancelar</button>
     </form>
 </div>
 
-<div id="resultado"></div>
-
 <script>
-    function mostrarCampo(opcion) {
-        if (opcion === 'tarjeta') {
-            document.getElementById('campo-tarjeta').style.display = 'block';
-        }
-    }
+    document.getElementById('paymentForm').addEventListener('change', function(event) {
+        var selectedMethod = event.target.value;
+        var emailFormDiv = document.getElementById('emailForm');
 
-    function cancelarPago() {
+        if (selectedMethod === 'tarjeta') {
+            emailFormDiv.style.display = 'block';
+        } else {
+            emailFormDiv.style.display = 'none';
+        }
+    });
+
+    function cancelPayment() {
         alert("Pago cancelado.");
     }
 </script>
