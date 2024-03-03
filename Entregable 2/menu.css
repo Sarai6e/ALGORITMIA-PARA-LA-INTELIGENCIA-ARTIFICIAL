@@ -1,0 +1,734 @@
+/*Estilo del Proyecto Final/
+/*Agregamos la fuente que vamos a utilizar en la pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Elimina la regla de fondo de GIF */
+/* Elimina la regla de fondo de GIF */
+#inicio {
+    height: 100vh;
+    animation: changeBackground 12s infinite; /* Cambia la imagen cada 12 segundos (4 segundos por imagen) */
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes changeBackground {
+    0% { background-image: url('imagen1.jpg'); } /* Primera imagen */
+    33% { background-image: url('imagen2.jpg'); } /* Segunda imagen */
+    66% { background-image: url('imagen3.jpg'); } /* Tercera imagen */
+    100% { background-image: url('imagen1.jpg'); } /* Vuelve a la primera imagen */
+}
+
+
+#inicio .contenido header{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+
+}
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;    
+}
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: #f7ae12;
+}
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+
+}
+#inicio .contenido header .contenido-header nav ul li a:hover{
+    color: #f7ae12;
+}
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #f7ae12;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: #ffffff;
+}
+#inicio .contenido header .contenido-header .seleccionado{
+    color: #f7ae12;
+}
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    columns: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;   
+}
+#inicio .contenido .presentacion h2{
+    font-size: 50px;
+    margin-bottom: 55px;
+    text-align: center;
+    color:  #000000;
+    text-shadow: -1px -1px 1px #000000, 1px 1px 1px#000000, -1px 1px 1px #000000, 1px -1px 1px #000000;
+   -webkit-text-fill-color:  #f7ae12;
+
+}
+
+#inicio .contenido .presentacion p{
+    color: #fff;  
+}
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#inicio .contenido .presentacion a:hover{
+    background-color: #f7ae12;
+}
+#icono-nav{
+    color:#fff;
+    display: none;
+}
+
+/*SECCION HABILIDADES */
+.contenedor-skills{
+    background: linear-gradient(#f7ae12,rgba(0, 0, 0, 0.8)),url("fondoprogramacion.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+.contenedor-skills .skill{
+    max-width: 600px;
+    margin: 30px auto;
+    color: #fff;   
+}
+.contenedor-skills .skill .info{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-skills .skill .lista{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+.contenedor-skills .skill .barra{
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+/*ESTE ESTILO SE APLICARA LUEGO JAVASCRIPT PARA LOGRAR LA ANIMACION DE LA BARRA*/
+
+.contenedor-skills .skill .barra .barra-progreso1{
+    background-color: #fff;
+    width: 80%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso2{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso3{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso4{
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+/*Creamos las animaciones de las barras */
+@keyframes progreso1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 99%;
+    }
+}
+@keyframes progreso2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes progreso3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes progreso4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+/*SECCION PORTAFOLIO*/
+#portafolio{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+#portafolio .titulo-seccion{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration:underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#portafolio .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+#portafolio .fila .proyecto{
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+#portafolio .fila .proyecto img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+
+}
+#portafolio .fila .proyecto:hover img{
+    filter: grayscale(0);
+}
+#portafolio .fila .proyecto .info{
+
+    position: absolute;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    color: #f7ae12;
+    width: 100%;
+    padding: 4px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+#portafolio .fila .proyecto:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+/*SECCION CONTACTO*/
+
+#contacto{
+    padding: 100px 15px;
+
+}
+#contacto .titulo-seccion{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;   
+}
+#contacto .contenedor-form{
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto .contenedor-form .fila{
+    margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+#contacto .contenedor-form .mitad input{
+    width: 48%;
+}
+#contacto .contenedor-form .input-full{
+    width: 100%;
+}
+#contacto .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#contacto .btn-enviar:hover{
+    background-color: #f7ae12;
+    color: #fff;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0 ;   
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav.resposive ul li{
+        margin: 5px 0;
+    }
+    #icono-nav{
+        display: block;
+    }
+    #inicio .contenido .presentacion h2{
+        font-size: 40px;
+    }
+    #sobremi{
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img{
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion{
+        text-align: center;
+    }
+    #sobremi .sobremi h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    #servicios{
+        padding: 50px 15px;
+    }
+    #servicios .fila{
+        display: block;
+    }
+    #servicios .fila .servicios{
+        margin: 10px auto;
+    }
+    .contenedor-skills{
+        padding: 50px 20px;
+    }
+    #portafolio{
+        padding: 50px 0;
+    }
+    #portafolio .fila{
+        display: block;
+    }
+    #portafolio .fila .proyecto{
+        margin: 10px auto;
+    }
+    #contacto{
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-form .mitad{
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+/*ESTE ESTILO SE APLICARA LUEGO JAVASCRIPT PARA LOGRAR LA ANIMACION DE LA BARRA*/
+
+.contenedor-skills .skill .barra .barra-progreso1{
+    background-color: #fff;
+    width: 80%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso2{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso3{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso4{
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+/*SECCION CONTACTO*/
+
+#contacto{
+    padding: 100px 15px;
+
+}
+#contacto .titulo-seccion{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;   
+}
+#contacto .contenedor-form{
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto .contenedor-form .fila{
+    margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+#contacto .contenedor-form .mitad input{
+    width: 48%;
+}
+#contacto .contenedor-form .input-full{
+    width: 100%;
+}
+#contacto .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#contacto .btn-enviar:hover{
+    background-color: #f7ae12;
+    color: #fff;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0 ;   
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav.resposive ul li{
+        margin: 5px 0;
+    }
+    #icono-nav{
+        display: block;
+    }
+    #inicio .contenido .presentacion h2{
+        font-size: 40px;
+    }
+    #sobremi{
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img{
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion{
+        text-align: center;
+    }
+    #sobremi .sobremi h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    #servicios{
+        padding: 50px 15px;
+    }
+    #servicios .fila{
+        display: block;
+    }
+    #servicios .fila .servicios{
+        margin: 10px auto;
+    }
+    .contenedor-skills{
+        padding: 50px 20px;
+    }
+    #portafolio{
+        padding: 50px 0;
+    }
+    #portafolio .fila{
+        display: block;
+    }
+    #portafolio .fila .proyecto{
+        margin: 10px auto;
+    }
+    #contacto{
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-form .mitad{
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.barra-adicional {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Para distribuir los elementos horizontalmente */
+    background-color: #f7ae12; /* Color de fondo de la barra adicional */
+    padding: 10px 30px; /* Ajusta el padding según tus necesidades */
+}
+
+.barra-adicional .logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+    margin-right: -330px; /* Ajusta el margen derecho del logo */
+    margin-bottom: -3px; /* Baja un poco el logo */
+}
+
+.barra-adicional .busqueda {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    height: 100%; /* Establece un alto fijo */
+}
+
+.barra-adicional .busqueda input[type="text"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    margin-right: 5px;
+    width: 500px; /* Ancho del campo de búsqueda */
+    text-align: center; /* Centra el texto */
+}
+
+.barra-adicional .busqueda button {
+    padding: 10px; /* Ajusta el padding */
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #f7ae12;
+    cursor: pointer;
+    font-size: 20px;
+}
+.barra-adicional .busqueda button:hover {
+    background-color: #f7ae12; /* Cambio de color de fondo del botón al pasar el ratón */
+    color: #fff; /* Cambio de color del icono del botón al pasar el ratón */
+}
+
+.barra-adicional .acciones {
+    display: flex;
+    align-items: center;
+}
+
+.barra-adicional .icono {
+    margin-left: 15px; /* Ajusta el margen entre iconos según tus necesidades */
+    color: #fff; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.barra-adicional .icono:hover {
+    color: #ccc; /* Cambia el color del icono al pasar el ratón */
+}
+
+
+/* Estilos para el enlace de WhatsApp */
+.whatsapp-icon {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del icono */
+    width: 70px; /* Ancho del enlace */
+    height: 70px; /* Altura del enlace */
+    border-radius: 50%; /* Bord es redondeado para formar un círculo */
+    position: fixed; /* Posición fija */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    left: 20px; /* Distancia desde la parte izquierda */
+    display: flex; /* Hacer el contenido flex para centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    font-size: 30px; /* Tamaño del icono */
+    z-index: 1000; /* Asegurar que esté encima de otros elementos */
+    animation: pulse 2s infinite alternate; /* Animación de pulso */
+}
+
+/* Cambiar el color del icono al pasar el ratón por encima */
+.whatsapp-icon:hover {
+    background-color: #45a049; /* Cambiar el color de fondo al pasar el ratón por encima */
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Escala inicial */
+    }
+    100% {
+        transform: scale(1.2); /* Escala al 120% */
+    }
+}
+
+/* Estilos para los círculos */
+.circles {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Los círculos no deben ser clicables */
+}
+
+.circle {
+    position: absolute;
+    background-color: rgba(76, 175, 80, 0.3); /* Color del círculo (verde con opacidad) */
+    width: 20px; /* Ancho del círculo */
+    height: 20px; /* Altura del círculo */
+    border-radius: 50%; /* Borde redondeado para formar un círculo */
+    animation: circle-animation 3s infinite; /* Animación de movimiento */
+}
+
+/* Animación de movimiento de los círculos */
+@keyframes circle-animation {
+    0% {
+        transform: translateY(0) scale(0); /* Posición y escala inicial */
+        opacity: 1; /* Opacidad inicial */
+    }
+    100% {
+        transform: translateY(-500px) scale(1); /* Posición y escala final */
+        opacity: 0; /* Opacidad final */
+    }
+}
+
+
+
+
+
+
