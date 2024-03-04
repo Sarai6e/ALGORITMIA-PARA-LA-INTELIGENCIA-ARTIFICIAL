@@ -178,7 +178,7 @@
         </form>
 
         <div class="back-to-home">
-            <a href="menu.html">Volver a la página principal</a>
+            <a href="chatbot.html">Volver a la página principal</a>
         </div>
     </div>
 

@@ -184,7 +184,7 @@
         </div>
 
         <!-- Enlace a la página principal -->
-        <a href="menu.html" class="link-principal">
+        <a href="chatbot.html" class="link-principal">
             <button>Volver a la página principal</button>
         </a>
     </div>

@@ -29,7 +29,7 @@
       <input type="submit" class="form__submit" value="Enter">
       <section>
         <a href="registro.php">Create account</a>
-        <a href="menu.html">INICIO</a>
+        <a href="chatbot.html">INICIO</a>
       </section>
     </div>
   </form>    
